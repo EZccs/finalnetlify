@@ -4,12 +4,27 @@
         <title>InjSite</title>
         <meta charset="utf-8">
         <style>
+            .detail{
+                display:flex;
+                width:1000;
+                justify-content:center;
+                padding:10px;
+            }
+            .child {
+                width: 300px;
+                height: 230px;
+                margin: 10px;
+                background-color: rgb(66, 230, 241);
+                text-align:center;
+            }
             #topmenu {
+                padding:10px;
+                width: 1400px;
                 height:50px;
                 color: #98E0AD;
+                margin: 0 auto;
             }
             #topmenu ul{
-                width: 1000px;
                 margin: 0 auto;
                 overflow: hidden;
             }
@@ -22,7 +37,7 @@
                 color: black; 
                 background-color: #98E0AD;
                 float: left;
-                width: 20%;
+                width: 330px;
                 height: 100%;
                 line-height: 50px;
                 vertical-align: middle;
@@ -39,50 +54,53 @@
     </head>
     <body>
         <div>
-            <h1>InjSite 인사이트</h1>
-            
+            <h1 style="color:#17BDFF; text-align:center; font-family: sans-serif">InjSite</h1>
         </div>
-        <div id="topmenu">
+        <div id="topmenu" margin="10px">
             <nav>
                 <ul>
                     <li><a href="./index.html">메인페이지</a></li>
                     <li><a href="">프로그래밍 언어</a></li>
                     <li><a href="">학과</a></li>
                     <li><a href="./bus.html">버스</a></li>
-                    <li><a href="">QnA 게시판</a></li>
                 </ul>
             </nav>
         </div>
-        <div>
-            <h2>컴퓨터 공학과 공지사항</h2>
-            <p>
-                <a href=https://cs.inje.ac.kr/%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD/>공지사항 바로가기</a>
-            </p>
+        <div class="detail">
+
+            <div class="child">
+                <h2 style="font-size:20px;">인제 컴퓨터 공학과<br> 공지사항 & 금주의 식단</h2>
+                <p>
+                    <a href=https://cs.inje.ac.kr/%EA%B3%B5%EC%A7%80%EC%82%AC%ED%95%AD/>공지사항 바로가기<br></a>
+                    <a href=https://www.inje.ac.kr/kor/Template/Bsub_page.asp?Ltype=5&Ltype2=3&Ltype3=3&Tname=S_Food&Ldir=board/S_Food&Lpage=s_food_view&d1n=5&d2n=4&d3n=4&d4n=0>
+                        금주의 식단 바로가기
+                    </a>
+                </p>
+            </div>
+            <div class="child">
+                <h2 style="font-size:20px">인제 컴퓨터 공학과<br> Tel&open kakaoTalk </h2>
+                <p>
+                    055-320-3269<br>
+                    <a href=https://open.kakao.com/o/gZbgx36e>@kakaotalk</a>
+                </p>
+            </div>
+            <div class="child">
+                <h2 style="font-size:20px">학부 이메일&교수진 이메일 </h2>
+                <p>
+                    학부 : cshouse@inje.ac.kr<br>
+                    김태공 교수 : sun@inje.ac.kr<br>
+                    박세명 교수 : cssmpark@inje.ac.kr<br>
+                    서재현 교수 : jaiseu@inje.ac.kr<br>
+                    김상균 교수 : skkim@inje.ac.kr<br>
+                    김태완 교수 : twkim@inje.ac.kr<br>
+                    김평 교수 : pkim@inje.ac.kr<br>
+                </p>
+            </div>            
         </div>
         <div>
-            <h2>컴퓨터 공학과 Tel&open kakaoTalk </h2>
-            <p>
-                <a href=https://open.kakao.com/o/gZbgx36e>055-320-3269 @kakaotalk</a>
-                <img src="./image/map.png" align="right">
-            </p>
+            <h3>
+                <img src="./image/map.png" height="300px" align="right">
+            </h3>
         </div>
-        <div>
-            <h2>학부 이메일 </h2>
-            <p>
-                cshouse@inje.ac.kr
-            </p>
-        </div>
-        <div>
-            <h2>교수진 이메일</h2>
-            <p>
-                김태공 교수 : sun@inje.ac.kr<br>
-                박세명 교수 : cssmpark@inje.ac.kr<br>
-                서재현 교수 : jaiseu@inje.ac.kr<br>
-                김상균 교수 : skkim@inje.ac.kr<br>
-                김태완 교수 : twkim@inje.ac.kr<br>
-                김평 교수 : pkim@inje.ac.kr<br>
-            </p>
-        </div>
-        <img src="./image/bus.png" align="right">
     </body>
 </html>
