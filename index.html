@@ -3,6 +3,16 @@
     <head>
         <title>InjSite</title>
         <meta charset="utf-8">
+        <script>
+            function closePopup() {
+                var popup = document.querySelector('.popup');
+                var popupLayer = document.querySelector('.popup_layer');
+                var popupDimmed = document.querySelector('.popup_dimmed');
+                popup.style.display = 'none';
+                popupLayer.style.display = 'none';
+                popupDimmed.style.display = 'none';
+            }
+        </script>
         <style>
             .detail{
                 display:flex;
@@ -23,14 +33,64 @@
             .imageChild{
                 margin:0;
             }
+            .popup{
+                position:fixed;
+                top:0;
+                right:0;
+                bottom:0;
+                left:0;
+            }
+            .popup_layer{
+                position:absolute;
+                top:50%;
+                left:50%;
+
+                width:300px;
+                height:150px;
+                padding-bottom:50px;
+                margin:-100px 0 0 -150px;
+                background:#fff;
+                z-index:10;
+            }
+            .text_area{
+                padding:50px 30px 30px;
+                text-align:center;
+            }
+            .btn_area{
+                position:absolute;
+                left:0;
+                right:0;
+                bottom:0;
+                height:50px;
+                overflow:hidden;
+            }
+            .btn{
+                float:left;
+                width:50%;
+                height:100%;
+                font-size:15px;
+                font-weight:bold;
+                border:0;
+                background:pink;
+            }
+            .btn.no{
+                background:lightblue;
+            }
+            .popup_dimmed{
+                position:absolute;
+                top:0;
+                right:0;
+                bottom:0;
+                left:0;
+                background:#000;
+                opacity:0.3;
+            }
             #topmenu {
-                padding:10px;
-                width: 1400px;
                 height:50px;
                 color: #98E0AD;
-                margin: 0 auto;
             }
             #topmenu ul{
+                width: 1000px;
                 margin: 0 auto;
                 overflow: hidden;
             }
@@ -43,7 +103,7 @@
                 color: black; 
                 background-color: #98E0AD;
                 float: left;
-                width: 330px;
+                width: 20%;
                 height: 100%;
                 line-height: 50px;
                 vertical-align: middle;
@@ -69,6 +129,7 @@
                     <li><a href="">프로그래밍 언어</a></li>
                     <li><a href="">학과</a></li>
                     <li><a href="./bus.html">버스</a></li>
+                    <li><a href="">QnA 게시판</a></li>
                 </ul>
             </nav>
         </div>
@@ -114,6 +175,23 @@
             <h4>
                 <img src="./image/map.png" height="300px" align="right">
             </h4>
+        </div>
+        <div class="popup">
+            <div class="popup_layer">
+                <div class="text_area">
+                    <strong class="title">
+                        Quiz!!!
+                    </strong>
+                    <p>
+                        퀴즈 내용
+                    </p>
+                </div>
+                <div class="btn_area">
+                    <button onclick="closePopup()" class="btn">예</button>
+                    <button onclick="closePopup()" class ="btn.no">아니오</button>
+                </div>
+            </div>
+            <div class="popup_dimmed"></div>
         </div>
     </body>
 </html>
