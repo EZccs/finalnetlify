@@ -1,0 +1,195 @@
+.logtable {
+    flex: 1;
+    width: 300px;
+    margin-top: 30px;
+}
+.slogtable {
+	flex: 1;
+    width: 200px;
+    margin-top: 20px;
+}
+.slogtable td {
+    text-align: left;
+}
+.slogtable .intext {
+    border: 1.5px rgb(68, 136, 244) solid;
+    width: 300px;
+    height: 20px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.slogtable .intext2 {
+    border: 1.5px rgb(68, 136, 244) solid;
+    width: 150px;
+    height: 20px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.logtable td {
+    text-align: left;
+}
+.logtable .intext {
+    border: 1.5px rgb(68, 136, 244) solid;
+    width: 500px;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.logtable .intext2 {
+    border: 1.5px rgb(68, 136, 244) solid;
+    width: 240px;
+    height: 30px;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+.loginbt {
+    float: left;
+    margin-top: 40px;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    border: 0;
+    outline: 1.5px rgb(68, 136, 244) solid;
+    border-radius: 5px;
+    padding-left: 10px;
+    background-color: rgb(164, 199, 255);
+}
+.sloginbt {
+    float: left;
+    margin-top: 20px;
+    width: 70px;
+    height: 30px;
+    font-size: 12px;
+    border: 0;
+    outline: 1.5px rgb(68, 136, 244) solid;
+    border-radius: 5px;
+    padding-left: 10px;
+    background-color: rgb(164, 199, 255);
+}
+.regbt {
+    float: right;
+    margin-right: 45px;
+    margin-top: 40px;
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+    border: 0;
+    outline: 1.5px rgb(68, 136, 244) solid;
+    border-radius: 5px;
+    padding-left: 10px;
+    background-color: rgb(164, 199, 255);
+}
+.regp {
+    margin-top: 40px;
+}
+.sregp {
+    margin-top: 20px;
+	font-size: 15px;
+}
+#join_form_in {
+	width:700px;
+	height:600px;
+	margin-top:50px;
+	background: white;
+}
+#join_f {
+	margin-left: 50px; 
+	margin-top:50px; 
+}
+.form-group {
+	margin-bottom: 40px; 
+	margin-left: 50px;
+	font-size: 16px;
+	font-weight: bold;
+	height:30px;
+	padding:5px 10px;
+	font-size:14px;
+}
+#wrap_in {
+	position: relative;
+	width:450px;
+	height:360px;
+	top:250px;
+	background: white;
+}
+#mem_t {
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+	margin-top:20px;
+}
+#mem_li {
+	width:400px;
+	height: 2px;
+	background:#E6E6E6;
+	margin-top:20px;
+}
+.mb {
+	margin-top:10px; 
+}
+.inp {
+	padding: 0 0 0 10px;
+	font-size:12px;
+	border-radius: 10px;
+	border:solid 1px #D8D8D8;
+	width: 450px; 
+	height: 35px; 
+}
+.inp:focus {
+	box-shadow: 1px 1px 10px 1px #00BFFF;
+	transition: 0.5s;
+}
+.form_btn {
+	margin-top:70px; 
+	margin-left: 200px; 
+}
+.form_bt {
+	padding:10px 20px 10px 20px;
+	background: #58D3F7;
+	border: 0px;
+	color:white;
+}
+.form_bt:hover {
+	background: #01A9DB;
+}
+.form_bt2 {
+	margin-left: 30px;
+	padding: 10px 20px 10px 20px;
+	background: #FFBF00;
+	border: 0;
+	color:white;
+	font-size: 12px;
+}
+.form_bt2 a {
+	color:white;
+}
+.form_bt2:hover {
+	background: #DBA901;
+}
+#wrap {
+    margin:0;
+	display: flex;
+    justify-content: center;
+}
+.childlog {
+    position: absolute;
+	top:200px;
+	left:1600px;
+    max-width: 300px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.logoutbt {
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #17BDFF;
+    color: #fff;
+    transition: background-color 0.3s;
+}
