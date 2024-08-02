@@ -124,7 +124,7 @@
                         ";
                     } else { ?>
                         <p><b><?php echo $_SESSION['name']; ?></b>님, 반갑습니다.</p>  
-                        <p><a href="./myboard.php">내가 쓴 게시글</a></p> 
+                        <p><a href="./board/myboard.php">내가 쓴 게시글</a></p> 
                         <p><button onclick="location.href='../login/logout.php'" class="logoutbt">로그아웃</button></p>
                     <?php    
                     }
@@ -185,12 +185,32 @@
                 
             ?>
             <tr>
-                <td><a class="a_qna" href="/view.php?id=<?php echo $board['id'];?>"><?php echo $title; ?></a></td>
+                <td><a class="a_qna" href="./board/view.php?id=<?php echo $board['id'];?>"><?php echo $title; ?></a></td>
             </tr>    
             <?php } ?>
+            </table>
             <div id="news-container">
                 <h3> IT News </h3>
-                <!-- 뉴스 내용이 여기에 동적으로 추가됨 -->
+                <?php 
+                    $jsonFilePath = './news.json';
+
+                    $jsonData = file_get_contents($jsonFilePath);
+                    $newsItems = json_decode($jsonData, true);
+                    if ($newsItems === null) {
+                        echo "Failed to load news.json";
+                        exit;
+                    }
+                ?>
+                <?php foreach($newsItems as $item): ?>
+                <div class="news-item">
+                    <?php if (!empty($item['image'])): ?>
+                        <img src="<?= htmlspecialchars($item['image']) ?>" alt="<?= htmlspecialchars($item['title']) ?>">
+                    <?php endif; ?>
+                    <h3>
+                        <a href="<?= htmlspecialchars($item['link']) ?>"><?= htmlspecialchars($item['title']) ?></a>
+                    </h3>
+                </div>
+                <?php endforeach; ?>
             </div>          
         </div>
         <div class="popup-container">
@@ -202,6 +222,23 @@
                 </div>
             </div>
         </div>
+        <div id="banner-container" class="banner-container">
+            <div class="banner-item">
+                <a href="https://codeup.kr" target="_blank">
+                    <img src="./image/codeup.png" alt="코드업" class="banner-img">
+                </a>
+            </div>
+            <div class="banner-item">
+                <a href="https://www.acmicpc.net" target="_blank">
+                    <img src="./image/baekjoon.png" alt="백준" class="banner-img">
+                </a>
+            </div>
+            <div class="banner-item">
+                <a href="https://codingdojang.com" target="_blank">
+                    <img src="./image/codingdojang.png" alt="코딩도장" class="banner-img">
+                </a>
+        </div>
+    </div>
     </div>
 </body>
 </html>
