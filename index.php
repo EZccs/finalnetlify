@@ -162,11 +162,11 @@
         </div>   
         <div class="detail">
             <h3>
-                <button type="button" class="logo-button" onclick="location.href='./c_details.html'"><img src="./image/clogo.png" height="150" width="150"></button>
-                <button type="button" class="logo-button" onclick="location.href='./cpp_details.html'"><img src="./image/cpplogo.png" height="150" width="150"></button>
-                <button type="button" class="logo-button" onclick="location.href='./csharp_details.html'"><img src="./image/csharplogo.png" height="150" width="150"></button>
-                <button type="button" class="logo-button" onclick="location.href='./java_details.html'"><img src="./image/javalogo.png" height="150" width="150"></button>
-                <button type="button" class="logo-button" onclick="location.href='./python_details.html'"><img src="./image/pythonlogo.png" height="150" width="150"></button>
+                <button type="button" class="logo-button" onclick="location.href='./c_details.php'"><img src="./image/clogo.png" height="150" width="150"></button>
+                <button type="button" class="logo-button" onclick="location.href='./cpp_details.php'"><img src="./image/cpplogo.png" height="150" width="150"></button>
+                <button type="button" class="logo-button" onclick="location.href='./csharp_details.php'"><img src="./image/csharplogo.png" height="150" width="150"></button>
+                <button type="button" class="logo-button" onclick="location.href='./java_details.php'"><img src="./image/javalogo.png" height="150" width="150"></button>
+                <button type="button" class="logo-button" onclick="location.href='./python_details.php'"><img src="./image/pythonlogo.png" height="150" width="150"></button>
             </h3>
         </div>
         
